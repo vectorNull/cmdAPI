@@ -1,14 +1,13 @@
 using cmdAPI.Models;
-using Microsoft.AspNetCore.Server.IIS.Core;
 using Microsoft.EntityFrameworkCore;
 
 namespace cmdAPI.Data
 {
-    public class CommandRepo : ICommandRepo
+    public class SQLCommandRepo : ICommandRepo
     {
         private readonly AppDbContext _context;
 
-        public CommandRepo(AppDbContext context)
+        public SQLCommandRepo(AppDbContext context)
         {
             _context = context;
         }
