@@ -42,7 +42,7 @@ namespace cmdAPI.Data
            return await _context.Commands.FirstOrDefaultAsync(c => c.Id == id);
         }
 
-        public async Task SaveChanges()
+        public async Task SaveChangesAsync()
         {
             await _context.SaveChangesAsync();
         }
